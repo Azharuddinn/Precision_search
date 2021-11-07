@@ -1,0 +1,163 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Precise</title>
+        <link href="{% static 'style.css' %}" rel="stylesheet">
+      
+    </head>
+
+
+    <body>
+       <p>
+       <div id = "upperbody">
+           <div id = 'nonsense'> 
+           </div>
+            <div id = "precision_border">
+                <h4 id = "Precision"> Precise 
+            </div>
+        
+            <hr>
+           
+        </div>
+       <h4> Find pages with... </h4>
+        <p>
+        
+
+        <form action = "{% url 'search' %}" method ="POST"> 
+            {% csrf_token %}
+            <div id = "container">
+                <div class="finder title" >
+                    <div class="finder__outer">
+                        <div class="finder__inner">
+                            <div class="finder__icon" ref="icon"></div>
+                            <input id = "1" oninput="myFunction()" data-section = 'title'   class="finder__input title"  type="text" name='title' Placeholder = 'General e.g: Dog sweaters'>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div> </div>
+            
+            <div id = "second_container">
+                <div class="finder phrase" >
+                    <div class="finder__outer">
+                        <div class="finder__inner">
+                            <div class="finder__icon" ref="icon"></div>
+                            <input id = "2" oninput="myFunction2()"  data-section = 'phrase'  class="finder__input phrase"  type="text" name='phrase' Placeholder = 'Phrase e.g: Puppy dog sweater'>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id = "third_container">
+                <div class="finder website" >
+                    <div class="finder__outer">
+                        <div class="finder__inner">
+                            <div class="finder__icon" ref="icon"></div>
+                            <input id = "3" data-section = 'website'  class="finder__input website"  type="text" name='website' Placeholder = 'Website e.g: nytimes.com'>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div> </div>
+
+            <section id="header-container">
+                <select name = 'file'>
+                    <option disabled>Click to select file</option>
+                    <option value="">Any format</option>
+                    <option value="PDF">PDF</option>
+                    <option value="Adobe postscript (.ps)">Adobe postscript (.ps)</option>
+                    <option value="Autodesk DWF (.dwf)">Autodesk DWF (.dwf)</option>
+                </select>
+            </section>
+
+            <section id="header-container_2">
+                <select name = "location">
+                    <option disabled>Click to select</option>
+                    <option value="any">Anywhere in the page</option>
+                    <option value="title">In the title of page</option>
+                    <option value="body">In the text of the page</option>
+                </select>
+            </section>
+
+
+            <input id = "Search" type = "submit" value = "Search">
+            <p>
+            
+            
+            
+        
+        </form>
+        
+           
+       <hr id = "news1" >
+       <div id = "vertical_line0"></div>
+        
+        <div class="main">
+            <div class="circle"></div>
+        </div>
+
+        
+        <div id = "demo"> </div>
+
+                
+        <div id = "circle_text"> Search<p> general <p>or exact <p> phrase </div>
+        
+
+
+        <div id = "vertical_line"></div>
+
+       <hr id = "news3" >
+       <hr id = "news4">
+
+
+        
+
+        <h5 id = "files"> Find pages only in the format you prefer: </h5>
+
+
+
+        <div id = "vertical_line_2"></div>
+        
+
+        
+        <h5 id = "files_2"> Where do you want your title or phrase to appear? </h5>
+        
+        <div id = "vertical_line_3"></div>
+        
+        <h5 id = "website_description"> Get results from only one specific site:</h5>
+
+     
+
+    
+
+      
+
+        
+
+    
+        
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% block script %}
+    <script src="{% static 'precise.js' %}"></script>
+{% endblock %}
+
+
+</html>
