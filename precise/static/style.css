@@ -597,9 +597,14 @@ select option:hover {
 
 #website_description {
     position: absolute;
+<<<<<<< HEAD
     top:591%;
+=======
+    top:590%;
+>>>>>>> 012b4bcba03c7c8a4c0692ca4f2243a062094a61
     left: 6%;
     font-weight: lighter;
     font-size: 20px;
 
 }
+
