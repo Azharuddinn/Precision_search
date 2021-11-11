@@ -1,13 +1,14 @@
 body {
     background-color: rgb(255, 255, 255);
     overflow-x: hidden;
+    position: relative;
 }
 
 #Precision {
     position: relative;
-    left: 16%;
+    left: 15%;
     top: 6px;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: lighter;
     color: rgb(253, 253, 253);
 }
@@ -19,12 +20,12 @@ body {
     border-radius: 180px;
     margin-left: 15px;
     border: rgb(218, 214, 214) solid thin; 
-    width: 8%;
-    height: 40px;
+    width: 7%;
+    height: 35px;
     position: absolute;
     bottom: -10px;
-    left:0%;
-    top: 20px;
+    left:0.5%;
+    top: 24px;
     background-color: rgb(43, 39, 39);
 }
 
@@ -133,7 +134,7 @@ body {
     color: #2c3e50;
     width: 110%;
     position: absolute;
-    bottom: 190px;
+    top:152px;
     left: 110%;
     height: 40px;
    
@@ -150,7 +151,7 @@ body {
     color: #2c3e50;
     left: 670%;
     position: absolute;
-    bottom: 280%;
+    top: 132px;
     
     
     display: flex;
@@ -166,7 +167,7 @@ body {
     width: 110%;
     position: absolute;
     left: 435%;
-    bottom: -100%;
+    top: 360px;
 
     display: flex;
     justify-content: center;
@@ -311,7 +312,7 @@ body{
     height:115px;
     border:1px solid #CCC;
     position:absolute;
-    top:-470px; bottom:0px; left:0;right:0;
+    top:280px; bottom:0px; left:0;right:0;
     margin:auto;
     border-radius:50%;
     background:rgb(44, 42, 42);
@@ -322,7 +323,7 @@ body{
     height:115px;
     border:1px solid #CCC;
     position:absolute;
-    top:335px; bottom:px; left:0;right:0;
+    top:5px; bottom:px; left:0;right:0;
     margin:auto;
     border-radius:50%;
     background:rgb(44, 42, 42);
@@ -335,7 +336,7 @@ body{
     height:20px;
     border-radius:50%;
     position:relative;
-    top:48px; bottom:0px; left:0;right:0;
+    top:48px; bottom:0px; left:0rem;right:0rem;
     overflow:hidden;
     margin:auto;
     animation: circle 6s linear infinite;
@@ -346,12 +347,12 @@ body{
 #circle_text {
     position: absolute;
     left:48%;
-    bottom: 610px;
+    top: 135px;
     font-size: 16px;
     letter-spacing: 0.78px;
    
 
-    color: rgb(250, 249, 249);
+    color: rgb(255, 255, 255);
 }
 
 #second_circle_text{
@@ -474,7 +475,7 @@ body {
   width: 320px;
   height: 55px;
   left: 490%;
-  top: 722%;
+  top: 1240%;
   margin-left: -160px;
   margin-top: -87px;
   background-color: rgb(163, 56, 56);
@@ -486,7 +487,7 @@ body {
     width: 320px;
     height: 55px;
     left: 490%;
-    top: 1122%;
+    top: 1650%;
     margin-left: -160px;
     margin-top: -87px;
     background-color: rgb(163, 56, 56);
@@ -528,7 +529,7 @@ select option:hover {
 
 #files {
     position: absolute;
-    top:83.5%;
+    top:1050%;
     left: 6%;
     font-weight: lighter;
     font-size: 20px;
@@ -546,7 +547,7 @@ select option:hover {
 
 #files_2 {
     position: absolute;
-    top:114%;
+    top:1430%;
     left: 5%;
     font-weight: lighter;
     font-size: 20px;
@@ -590,13 +591,13 @@ select option:hover {
   display: inline-block;
   cursor: pointer;
   position: relative;
-  top:820px;
+  top:1140px;
   left:438%;
 }
 
 #website_description {
     position: absolute;
-    top:48%;
+    top:591%;
     left: 6%;
     font-weight: lighter;
     font-size: 20px;
